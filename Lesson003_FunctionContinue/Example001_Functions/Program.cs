@@ -61,14 +61,13 @@ string Method4(int count, string c) // char - тип символ.
 string res = Method4(5, " abc");
 Console.WriteLine(res);
 
+
 void Method5(int count, int a)
 {
-    int i = 0;
-    while (i < count)
+    for (int i = 0; i < count; i++) // цикл for, то же что и while, отличие лишь в компактности синтаксиса for.
     {
         Console.WriteLine(a);
         a--; // декримент.
-        i++;
     }
 }
-Method5(100, 100);
+Method5(100, 100); 
